@@ -1,0 +1,17 @@
+.like__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 55px;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    position: absolute;
+    top: 85%;
+    right: 2%;
+}
+
+.like__button:hover {
+    cursor: pointer;
+}

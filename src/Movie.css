@@ -8,7 +8,8 @@
     width: 80%;
 }
 
-.movies .movie {
+.movie {
+    position: relative;
     display: flex;
     width: 45%;
     background-color: white;
@@ -23,7 +24,7 @@
     0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
 
-.movie img {
+.movie__img {
     position: relative;
     max-width: 150px;
     width: 100%;

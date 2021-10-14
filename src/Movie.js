@@ -1,12 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./Movie.css"
+import Like from "./Like";
 
 function Movie({year, title, summary, poster, genres}) {
     return (
         <div className="movie">
-            <img src={poster} alt={title} title={title}/>
-            <div className="movie_column">
+            <img className="movie__img" src={poster} alt={title} title={title}/>
+            <div className="movie__column">
                 <h3 className="movie__title">{title}</h3>
                 <h5 className="movie__year">{year}</h5>
                 <ul className="movie__genres">
@@ -16,6 +17,8 @@ function Movie({year, title, summary, poster, genres}) {
                 </ul>
                 <p className="movie__summary">{summary.slice(0, 140)}...</p>
             </div>
+            <Like/>
+            <button className="movie__close-button">X</button>
         </div>
     );
 }
